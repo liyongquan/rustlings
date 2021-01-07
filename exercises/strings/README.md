@@ -7,3 +7,5 @@ to identify and create them, as well as use them.
 #### Book Sections
 
 - [Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+
+PS : string类型真的比其他语言复杂>_<
