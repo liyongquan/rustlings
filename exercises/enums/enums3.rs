@@ -1,8 +1,6 @@
 // enums3.rs
 // Address all the TODOs to make the tests pass!
 
-// I AM NOT DONE
-
 enum Message {
     // TODO: implement the message variant types based on their usage below
     ChangeColor(u8, u8, u8),
@@ -40,10 +38,16 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
-        if message == Message::ChangeColor() {
-
-        }
         // TODO: create a match expression to process the different message variants
+        match message {
+            //解析changeColor的字段出来
+            Message::ChangeColor(r, g, b) => self.color = (r, g, b),
+            Message::Echo(s) => println!("{}", s),
+            Message::Move(point) => self.move_position(point),
+            //不带前缀也是可以的
+            Quit => self.quit(),
+            _ => (),
+        }
     }
 }
 
