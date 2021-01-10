@@ -41,7 +41,7 @@ impl State {
 
     fn process(&mut self, message: Message) {
         if message == Message::ChangeColor() {
-            
+
         }
         // TODO: create a match expression to process the different message variants
     }
